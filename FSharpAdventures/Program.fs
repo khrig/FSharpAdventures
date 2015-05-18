@@ -17,13 +17,13 @@ let generateNumber =
 let double x = 
     x * 2
 
-// Higher order function
-let quadruple x =
-    2 * double x
+// Higher order function (uses a function as input to the function)
+let addThree x y =
+    x y + 3
 
 [<EntryPoint>]
 let main argv = 
-    printfn "%d" (quadruple 2)
+    printfn "%d" (addThree double 2)
     let correctNumber = generateNumber
     printfn "Answer: %d \nGuess the number (0-100)" correctNumber
     let guess = Console.ReadLine() |> System.Int32.Parse
