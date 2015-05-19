@@ -3,9 +3,11 @@
 
 open System
 open _1_Functions
+open _2_Lists
     
 [<EntryPoint>]
 let main argv = 
-    Test1
+    //Test1
+    Test2
     let pauseProgram = Console.ReadLine()
     0 // return an integer exit code
